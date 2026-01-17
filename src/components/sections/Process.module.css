@@ -66,12 +66,29 @@
 }
 
 @media (max-width: 900px) {
+    .section {
+        padding: 4rem 0;
+    }
+
     .stepsGrid {
         grid-template-columns: 1fr;
         gap: 3rem;
+        margin-top: 2rem;
+        text-align: center;
+        /* Center align on mobile */
     }
 
     .stepsGrid::before {
         display: none;
+    }
+
+    .stepNumber {
+        font-size: 3rem;
+        /* Reduced from 4rem */
+    }
+
+    .stepDesc {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }

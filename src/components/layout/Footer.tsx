@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { BrandPattern } from '../ui/BrandPattern';
+import { FloatingAccents } from '../ui/FloatingAccents';
 import { StarIcon } from '../ui/StarSystem';
 import styles from './Footer.module.css';
 
@@ -9,8 +10,35 @@ export default function Footer() {
 
     return (
         <footer className={styles.footer}>
-            {/* Layer 2: Visual Brand Layer (Background) */}
+            {/* Layer 2: Visual Brand Layer (Background Pattern) */}
             <BrandPattern />
+
+            {/* Floating Star Accents (Sharp stars) */}
+            <FloatingAccents />
+
+            {/* NEW: Heavy Ambient Blurs (Glassy/Mac-like background depth) */}
+            <div style={{
+                position: 'absolute',
+                top: '0%',
+                left: '20%',
+                width: '600px',
+                height: '600px',
+                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.08) 0%, transparent 70%)',
+                filter: 'blur(80px)',
+                zIndex: 0,
+                pointerEvents: 'none',
+            }} />
+            <div style={{
+                position: 'absolute',
+                bottom: '0%',
+                right: '10%',
+                width: '500px',
+                height: '500px',
+                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.05) 0%, transparent 60%)',
+                filter: 'blur(100px)',
+                zIndex: 0,
+                pointerEvents: 'none',
+            }} />
 
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 

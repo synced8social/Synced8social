@@ -89,13 +89,37 @@
     letter-spacing: 0.05em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .textColumn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .textColumn h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .itemContent {
+        min-width: 0;
     }
 
     .visualColumn {
-        min-height: 300px;
-        margin-top: 2rem;
+        min-height: 400px;
+        margin-top: 3rem;
+    }
+
+    .statCard {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+        max-width: 300px;
     }
 }

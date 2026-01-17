@@ -8,6 +8,7 @@ import styles from './Header.module.css';
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,11 +18,20 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Lock body scroll when menu is open
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [mobileMenuOpen]);
+
     return (
         <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
             <div className={`container ${styles.navContainer}`}>
                 {/* Logo - Left */}
-                <Link href="/" className={styles.logoContainer}>
+                <Link href="/" className={styles.logoContainer} onClick={() => setMobileMenuOpen(false)}>
                     <Image
                         src="/images/Logo.png"
                         alt="Synced Logo"
@@ -31,7 +41,7 @@ export default function Header() {
                     />
                 </Link>
 
-                {/* Navigation - Center */}
+                {/* Desktop Navigation - Center */}
                 <nav className={styles.centeredNav}>
                     <Link href="/websites" className={styles.navLink}>Websites</Link>
                     <Link href="/upwork" className={styles.navLink}>Upwork</Link>
@@ -40,14 +50,38 @@ export default function Header() {
                     <Link href="/results" className={styles.navLink}>Results</Link>
                 </nav>
 
-                {/* CTA - Right */}
+                {/* Right Actions: CTA + Hamburger */}
                 <div className={styles.rightAction}>
-                    <MagneticButton
-                        href="/contact"
-                        style={{ padding: '0.75rem 2rem', fontSize: '1rem' }} // Match header sizing
+                    <div className={styles.desktopCTA}>
+                        <MagneticButton
+                            href="/contact"
+                            style={{ padding: '0.75rem 2rem', fontSize: '1rem' }}
+                        >
+                            Start Growth
+                        </MagneticButton>
+                    </div>
+
+                    {/* Hamburger Button */}
+                    <button
+                        className={`${styles.hamburger} ${mobileMenuOpen ? styles.open : ''}`}
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label="Toggle Menu"
                     >
-                        Start Growth
-                    </MagneticButton>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu Overlay */}
+            <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.menuVisible : ''}`}>
+                <div className={styles.mobileLinks}>
+                    <Link href="/websites" onClick={() => setMobileMenuOpen(false)}>Websites</Link>
+                    <Link href="/upwork" onClick={() => setMobileMenuOpen(false)}>Upwork</Link>
+                    <Link href="/social" onClick={() => setMobileMenuOpen(false)}>Social</Link>
+                    <Link href="/process" onClick={() => setMobileMenuOpen(false)}>Process</Link>
+                    <Link href="/results" onClick={() => setMobileMenuOpen(false)}>Results</Link>
+                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className={styles.mobileCTA}>Start Growth</Link>
                 </div>
             </div>
         </header>

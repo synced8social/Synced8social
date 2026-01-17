@@ -22,17 +22,14 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* Needed for absolute centering */
 }
 
 .logoContainer {
     position: relative;
     width: 220px;
-    /* Increased from 180px */
     height: 55px;
-    /* Increased from 45px */
-    z-index: 2;
-    /* Keep above nav if conflict */
+    z-index: 102;
+    /* Above mobile menu */
 }
 
 /* Centered Navigation */
@@ -44,15 +41,12 @@
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    /* Wide, confident spacing */
 }
 
 .navLink {
     color: var(--color-white);
     font-family: var(--font-primary);
-    /* Changed to Satoshi for premium look */
     font-size: 1.15rem;
-    /* Increased size significantly */
     font-weight: 500;
     opacity: 0.8;
     transition: all 0.2s ease;
@@ -67,36 +61,152 @@
 }
 
 .rightAction {
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 102;
+    /* Above mobile menu */
 }
 
-.ctaButton {
-    /* Strict Two-Tone Gradient */
-    background: linear-gradient(135deg, var(--color-orange-primary), var(--color-orange-secondary));
-    color: var(--color-white);
-    padding: 0.75rem 2rem;
-    border-radius: 100px;
-    font-family: var(--font-primary);
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: -0.01em;
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 1.5rem;
+    background: transparent;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(232, 69, 5, 0.2);
-    display: inline-block;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger span {
+    width: 2rem;
+    height: 2px;
+    background: var(--color-white);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* Open State Animation for Hamburger */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.hamburger.open::after {
+    /* Creating the X shape if using 3 lines, or using just 2 lines with pseudo elements */
+    /* Simplified logic: using 2 lines that rotate */
+}
+
+/* Refined Hamburger logic for 2 lines */
+.hamburger {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    bottom: 0;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 9px);
+}
+
+.hamburger.open span:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -9px);
+}
+
+
+/* Mobile Menu Overlay */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-charcoal);
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menuVisible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobileLinks a {
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    color: var(--color-white);
     text-decoration: none;
+    font-weight: 600;
 }
 
-.ctaButton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(232, 69, 5, 0.4);
-    background: linear-gradient(135deg, var(--color-orange-secondary), var(--color-orange-primary));
+.mobileCTA {
+    margin-top: 1rem;
+    color: var(--color-orange-primary) !important;
 }
 
+/* Mobile Responsive Styles */
 @media (max-width: 900px) {
     .centeredNav {
         display: none;
-        /* Mobile handling */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 14px;
+        /* Tight height for 2 lines */
+    }
+
+    .desktopCTA {
+        display: none;
+        /* Hide primary CTA on mobile to save space, or keep if user prefers */
+    }
+
+    /* Only show hamburger on mobile */
+    .mobileMenu {
+        display: flex;
+        /* Activate flex for overlay */
+    }
+
+    .logoContainer {
+        width: 160px;
+        /* Smaller Logo on mobile */
+        height: 40px;
     }
 }
