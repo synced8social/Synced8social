@@ -17,6 +17,9 @@ export default function ResultsPage() {
                         <div>
                             <h1 className={styles.heroTitle}>
                                 Logic. Systems. <br />
+                                <p className={styles.heroSubtitle}>
+                                    Real revenue. Real retention. That&apos;s the only metric we track.
+                                </p>
                                 <span className="text-orange">Revenue.</span>
                             </h1>
                             <p className={styles.heroDesc}>

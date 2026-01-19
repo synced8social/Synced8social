@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import CTA from '@/components/sections/CTA';
-import { StarIcon } from '@/components/ui/StarSystem';
+// StarIcon import removed
 import { BrandPattern } from '@/components/ui/BrandPattern';
 import ResultsGrid from '@/components/sections/ResultsGrid';
 import MagneticButton from '@/components/ui/MagneticButton';
@@ -16,12 +16,15 @@ export default function WebsitesPage() {
                 <div className={`container ${styles.heroContent}`}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem', alignItems: 'center' }}>
                         <div>
+                            <p className={styles.heroSubtitle}>
+                                Your site shouldn&apos;t just look good. It should print money.
+                            </p>
                             <h1 className={styles.heroTitle}>
                                 Websites that <br />
                                 <span className="text-orange">Mean Business.</span>
                             </h1>
                             <p className={styles.heroDesc}>
-                                We don't build brochures. We build high-performance growth engines tailored to your industry's specific revenue drivers.
+                                <p style={{ color: 'var(--color-grey-text)' }}>We build high-octane stores that convert. Optimized for AOV and LTV. It&apos;s not just a shop; it&apos;s a machine.</p>
                             </p>
                             <MagneticButton href="/contact">
                                 Start Your Build

@@ -11,7 +11,6 @@ export default function ResultsGrid() {
 
                 <div className={styles.grid}>
                     <div className={styles.card}>
-                        <div className={styles.number}>90+</div>
                         <h3 className={styles.label}>Performance Score</h3>
                         <p className={styles.desc}>
                             Google PageSpeed metrics that boost SEO and user retention. faster sites rank higher.

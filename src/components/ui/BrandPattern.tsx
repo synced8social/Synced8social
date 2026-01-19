@@ -1,4 +1,27 @@
+'use client';
+
 import { StarIcon } from './StarSystem';
+
+import { useState, useEffect } from 'react';
+
+const PatternStar = () => {
+    const [opacity, setOpacity] = useState(0.1);
+
+    useEffect(() => {
+        setOpacity(Math.random() * 0.5 + 0.1);
+    }, []);
+
+    return (
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            opacity: opacity
+        }}>
+            <StarIcon size={12} variant="glass" opacity={0.6} />
+        </div>
+    );
+};
 
 export const BrandPattern = () => (
     <div
@@ -27,14 +50,7 @@ export const BrandPattern = () => (
             transform: 'rotate(-5deg)', // Slight dynamic tilt
         }}>
             {Array.from({ length: 40 }).map((_, i) => (
-                <div key={i} style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    opacity: Math.random() * 0.5 + 0.1 // Random variance for "alive" feel
-                }}>
-                    <StarIcon size={12} variant="glass" opacity={0.6} />
-                </div>
+                <PatternStar key={i} />
             ))}
         </div>
     </div>

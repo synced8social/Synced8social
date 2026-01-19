@@ -1,6 +1,6 @@
 import IntakeForm from '@/components/forms/IntakeForm';
 import { BrandPattern } from '@/components/ui/BrandPattern';
-import { FloatingAccents } from '@/components/ui/FloatingAccents';
+// import styles from '@/styles/Contact.module.css'; // Removing unused import } from '@/components/ui/FloatingAccents';
 import styles from '@/styles/ServicePage.module.css';
 
 export default function Contact() {
@@ -21,7 +21,7 @@ export default function Contact() {
                 pointerEvents: 'none',
             }} />
 
-            <FloatingAccents />
+
 
             <div className="container" style={{ position: 'relative', zIndex: 1, paddingTop: '120px', paddingBottom: '80px' }}>
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -29,7 +29,7 @@ export default function Contact() {
                         Initiate <span className="text-orange">Growth Protocol.</span>
                     </h1>
                     <p style={{ fontSize: '1.2rem', color: 'var(--color-grey-text)' }}>
-                        Tell us your objective. We'll engineer the system to get you there.
+                        Tell us your objective. We&apos;ll engineer the system to get you there.
                     </p>
                 </div>
 

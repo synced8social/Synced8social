@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// Image import removed
 import { BrandPattern } from '../ui/BrandPattern';
 import { FloatingAccents } from '../ui/FloatingAccents';
 import { StarIcon } from '../ui/StarSystem';

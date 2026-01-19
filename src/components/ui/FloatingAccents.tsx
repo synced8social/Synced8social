@@ -8,7 +8,7 @@ export const FloatingAccents = () => {
 
     useEffect(() => {
         setMounted(true);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     if (!mounted) return null;
 

@@ -109,7 +109,7 @@ export default function IntakeForm() {
                 </div>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white' }}>Received.</h2>
                 <p style={{ color: 'var(--color-grey-text)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-                    We've started analyzing your request. Expect a personalized roadmap in your inbox within 24 hours.
+                    We&apos;ve started analyzing your request. Expect a personalized roadmap in your inbox within 24 hours.
                 </p>
                 <button
                     onClick={() => window.location.href = '/'}

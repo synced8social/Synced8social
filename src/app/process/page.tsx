@@ -3,7 +3,7 @@ import ProcessSection from '@/components/sections/Process';
 import CTA from '@/components/sections/CTA';
 import { BrandPattern } from '@/components/ui/BrandPattern';
 import MagneticButton from '@/components/ui/MagneticButton';
-import { FloatingAccents } from '@/components/ui/FloatingAccents';
+// FloatingAccents removed as unused
 import styles from '@/styles/ServicePage.module.css';
 
 export default function ProcessPage() {
@@ -19,9 +19,10 @@ export default function ProcessPage() {
                                 The Blueprint <br />
                                 <span className="text-orange">For Scale.</span>
                             </h1>
-                            <p className={styles.heroDesc}>
-                                We don't guess. We engineer. Our 4-step process transforms chaos into a predictable growth engine, backed by data and architectural precision.
+                            <p className={styles.heroSubtitle}>
+                                We don&apos;t guess. We engineer outcome-driven systems.
                             </p>
+                            <p className={styles.processDescription}>We audit your current state, find the &apos;leaks&apos;, and map the exact trajectory to your goal. No fluff, just data.</p>
                             <MagneticButton href="/contact">
                                 Start The Process
                             </MagneticButton>

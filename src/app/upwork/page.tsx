@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+// Link import removed
 import CTA from '@/components/sections/CTA';
 import { StarIcon } from '@/components/ui/StarSystem';
 import { BrandPattern } from '@/components/ui/BrandPattern';
@@ -128,7 +128,7 @@ export default function UpworkPage() {
 
                         <div>
                             <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', lineHeight: 1.1 }}>
-                                Proof, not just <br /> <span className="text-orange">Promises.</span>
+                                From &quot;Just Another Freelancer&quot; to &quot;Authority&quot;
                             </h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--color-grey-text)', marginBottom: '2rem', lineHeight: 1.6 }}>
                                 See how we transformed a generic profile into a client-generating asset.
