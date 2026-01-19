@@ -21,9 +21,28 @@
     align-items: center;
 }
 
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
 .heroVisual {
     position: relative;
     width: 100%;
+}
+
+.contentVisual {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
 }
 
 
@@ -111,14 +130,15 @@
         padding-bottom: 40px;
     }
 
-    .heroGrid {
+    .heroGrid,
+    .contentGrid {
         grid-template-columns: 1fr;
         gap: 3rem;
         text-align: left;
     }
 
     .heroTitle {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         margin-bottom: 1.5rem;
     }
 
@@ -132,9 +152,14 @@
         margin-bottom: 2rem;
     }
 
-    .heroVisual {
+    .heroVisual,
+    .contentVisual {
         height: 300px !important;
         margin-top: 1rem;
+    }
+
+    .statsGrid {
+        gap: 1.5rem;
     }
 
     .grid {

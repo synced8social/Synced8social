@@ -27,19 +27,12 @@ export default function RealEstatePage() {
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: Responsive Showcase (Reused for Visual relevance) */}
-                        <div className={styles.heroVisual} style={{ position: 'relative', height: '400px', width: '100%', mixBlendMode: 'lighten' }}>
-                            <div style={{
-                                position: 'absolute',
-                                inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
-                                filter: 'blur(50px)',
-                                zIndex: 0
-                            }} />
+                        <div className={styles.heroVisual}>
                             <Image
                                 src="/images/responsive-showcase-v3.png"
                                 alt="Real Estate Platform Showcase"
                                 fill
-                                style={{ objectFit: 'contain', zIndex: 1 }}
+                                style={{ objectFit: 'contain', mixBlendMode: 'lighten' }}
                                 priority
                             />
                         </div>

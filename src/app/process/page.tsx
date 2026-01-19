@@ -28,19 +28,12 @@ export default function ProcessPage() {
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: System Architecture */}
-                        <div className={styles.heroVisual} style={{ position: 'relative', height: '400px', width: '100%', mixBlendMode: 'lighten' }}>
-                            <div style={{
-                                position: 'absolute',
-                                inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
-                                filter: 'blur(50px)',
-                                zIndex: 0
-                            }} />
+                        <div className={styles.heroVisual}>
                             <Image
                                 src="/images/process-architecture-v3.png"
                                 alt="System Architecture Diagram"
                                 fill
-                                style={{ objectFit: 'contain', zIndex: 1 }}
+                                style={{ objectFit: 'contain', mixBlendMode: 'lighten' }}
                                 priority
                             />
                         </div>
@@ -54,9 +47,9 @@ export default function ProcessPage() {
             {/* NEW SECTION: The Roadmap Visual */}
             <section className={styles.section} style={{ background: 'var(--color-charcoal-light)' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className={styles.contentGrid}>
                         {/* Visual Asset: Timeline */}
-                        <div style={{ position: 'relative', height: '500px', width: '100%', mixBlendMode: 'lighten' }}>
+                        <div className={styles.contentVisual} style={{ mixBlendMode: 'lighten' }}>
                             <Image
                                 src="/images/process-timeline-v3.png"
                                 alt="Project Workflow Timeline"
@@ -70,10 +63,10 @@ export default function ProcessPage() {
                                 Transparent <br /> <span className="text-orange">Timelines.</span>
                             </h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--color-grey-text)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                                No black boxes. You'll know exactly where we are, what's shipping next, and when you'll see ROI. We prioritize speed without sacrificing stability.
+                                No black boxes. You&apos;ll know exactly where we are, what&apos;s shipping next, and when you&apos;ll see ROI. We prioritize speed without sacrificing stability.
                             </p>
                             <div className={styles.card} style={{ border: 'none', background: 'transparent', padding: 0 }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                                <div className={styles.statsGrid}>
                                     <div>
                                         <h3 style={{ fontSize: '2.5rem', color: 'var(--color-white)', fontWeight: 'bold' }}>14 Days</h3>
                                         <p style={{ color: 'var(--color-grey-text)' }}>Avg. Launch</p>

@@ -80,9 +80,9 @@ export default function SocialPage() {
             {/* NEW SECTION: Support Interface Visual */}
             <section className={styles.section} style={{ background: 'var(--color-charcoal-light)' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className={styles.contentGrid}>
                         {/* Visual Asset: Support Interface */}
-                        <div style={{ position: 'relative', height: '500px', width: '100%' }}>
+                        <div className={styles.contentVisual}>
                             <Image
                                 src="/images/social-support-v3.png"
                                 alt="Premium Customer Support Interface"
@@ -101,10 +101,10 @@ export default function SocialPage() {
                                 Real Humans, <br /> <span className="text-orange">Real Speed.</span>
                             </h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--color-grey-text)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                                Chatbots annoy customers. We deploy real, trained support agents who speak your brand's voice and solve problems in under 5 minutes.
+                                Chatbots annoy customers. We deploy real, trained support agents who speak your brand&apos;s voice and solve problems in under 5 minutes.
                             </p>
                             <div className={styles.card} style={{ border: 'none', background: 'transparent', padding: 0 }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                                <div className={styles.statsGrid}>
                                     <div>
                                         <h3 style={{ fontSize: '2.5rem', color: 'var(--color-white)', fontWeight: 'bold' }}>&lt;5m</h3>
                                         <p style={{ color: 'var(--color-grey-text)' }}>Response Time</p>

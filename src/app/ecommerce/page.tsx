@@ -27,19 +27,12 @@ export default function EcommercePage() {
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: Revenue Logic (Reused for E-com relevance) */}
-                        <div className={styles.heroVisual} style={{ position: 'relative', height: '400px', width: '100%', mixBlendMode: 'lighten' }}>
-                            <div style={{
-                                position: 'absolute',
-                                inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
-                                filter: 'blur(50px)',
-                                zIndex: 0
-                            }} />
+                        <div className={styles.heroVisual}>
                             <Image
                                 src="/images/results-revenue.png"
                                 alt="E-commerce Revenue Growth"
                                 fill
-                                style={{ objectFit: 'contain', zIndex: 1 }}
+                                style={{ objectFit: 'contain', mixBlendMode: 'lighten' }}
                                 priority
                             />
                         </div>

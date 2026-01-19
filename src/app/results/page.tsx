@@ -30,19 +30,12 @@ export default function ResultsPage() {
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: Revenue Growth */}
-                        <div className={styles.heroVisual} style={{ position: 'relative', height: '400px', width: '100%', mixBlendMode: 'lighten' }}>
-                            <div style={{
-                                position: 'absolute',
-                                inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
-                                filter: 'blur(50px)',
-                                zIndex: 0
-                            }} />
+                        <div className={styles.heroVisual}>
                             <Image
                                 src="/images/results-revenue.png"
                                 alt="7-Figure Revenue Growth Chart"
                                 fill
-                                style={{ objectFit: 'contain', zIndex: 1 }}
+                                style={{ objectFit: 'contain', mixBlendMode: 'lighten' }}
                                 priority
                             />
                         </div>
@@ -54,9 +47,9 @@ export default function ResultsPage() {
             <section className={styles.section} style={{ background: 'var(--color-charcoal-light)' }}>
                 <FloatingAccents />
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className={styles.contentGrid}>
                         {/* Visual Asset: Funnel */}
-                        <div style={{ position: 'relative', height: '500px', width: '100%', mixBlendMode: 'lighten' }}>
+                        <div className={styles.contentVisual} style={{ mixBlendMode: 'lighten' }}>
                             <Image
                                 src="/images/results-funnel.png"
                                 alt="Conversion Optimization Funnel"
@@ -73,7 +66,7 @@ export default function ResultsPage() {
                                 Traffic is vanity. Sales are sanity. We build end-to-end funnels that capture attention, nurture trust, and automatically convert leads into high-ticket sales.
                             </p>
                             <div className={styles.card} style={{ border: 'none', background: 'transparent', padding: 0 }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                                <div className={styles.statsGrid}>
                                     <div>
                                         <h3 style={{ fontSize: '2.5rem', color: 'var(--color-white)', fontWeight: 'bold' }}>24/7</h3>
                                         <p style={{ color: 'var(--color-grey-text)' }}>Automated Sales</p>

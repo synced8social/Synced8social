@@ -98,9 +98,9 @@ export default function UpworkPage() {
             {/* PROVEN RESULTS (New Visual Section) */}
             <section className={styles.section}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className={styles.contentGrid}>
                         {/* Visual Asset: Case Study */}
-                        <div style={{ position: 'relative', height: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden' }}>
+                        <div className={styles.contentVisual} style={{ borderRadius: '24px', overflow: 'hidden' }}>
                             <Image
                                 src="/images/case-study-v3.png"
                                 alt="Case Study Metrics"
@@ -135,7 +135,7 @@ export default function UpworkPage() {
                                 By aligning visual authority with persuasive copy, we tripled the invite rate in under 30 days.
                             </p>
                             {/* Stats Grid */}
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                            <div className={styles.statsGrid}>
                                 <div>
                                     <h3 style={{ fontSize: '2.5rem', color: 'var(--color-white)', fontWeight: 'bold' }}>3x</h3>
                                     <p style={{ color: 'var(--color-grey-text)' }}>Invites</p>

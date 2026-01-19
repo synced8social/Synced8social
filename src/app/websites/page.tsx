@@ -60,13 +60,13 @@ export default function WebsitesPage() {
             {/* NEW SECTION: Device Agnostic / Responsive */}
             <section className={styles.section} style={{ background: 'var(--color-charcoal-light)' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className={styles.contentGrid}>
                         <div>
                             <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', lineHeight: 1.1, color: 'var(--color-white)' }}>
                                 Flawless on <br /> <span className="text-orange">Every Screen.</span>
                             </h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--color-grey-text)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                                60% of traffic is mobile. We design mobile-first to ensure your site performs perfectly whether it's on a 27" monitor or an iPhone.
+                                60% of traffic is mobile. We design mobile-first to ensure your site performs perfectly whether it&apos;s on a 27&quot; monitor or an iPhone.
                             </p>
                             <div className={styles.card} style={{ border: 'none', background: 'transparent', padding: 0 }}>
                                 <ul className={styles.cardList} style={{ gridTemplateColumns: '1fr', gap: '1rem' }}>
@@ -77,7 +77,7 @@ export default function WebsitesPage() {
                             </div>
                         </div>
                         {/* Visual Asset: Responsive Showcase */}
-                        <div style={{ position: 'relative', height: '500px', width: '100%', mixBlendMode: 'lighten' }}>
+                        <div className={styles.contentVisual} style={{ mixBlendMode: 'lighten' }}>
                             <Image
                                 src="/images/responsive-showcase-v3.png"
                                 alt="Responsive Design Showcase on Multiple Devices"
