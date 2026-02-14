@@ -6,19 +6,21 @@
 
 .header {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
 }
 
 .title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    margin-bottom: 0.75rem;
     color: var(--color-white);
+    letter-spacing: -0.02em;
 }
 
 .subtitle {
     color: var(--color-grey-text);
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 720px;
     margin: 0 auto;
 }
 
@@ -26,73 +28,62 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    align-items: stretch;
 }
 
 .card {
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 1.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(232, 69, 5, 0.3);
+    border-color: rgba(232, 69, 5, 0.28);
 }
 
 .number {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 800;
     line-height: 1;
-    margin-bottom: 1rem;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--color-orange-primary);
-    background: linear-gradient(180deg, var(--color-orange-primary), transparent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Optional: Solid backup or gradient fill */
-    -webkit-text-fill-color: transparent;
-}
-
-/* User previously asked for solid numbers, let's mix it. 
-   Maybe solid at bottom, fading up? Or just solid orange.
-   Let's stick to the styling requested before: solid orange.
-*/
-.number {
-    background: none;
-    -webkit-text-stroke: 0;
-    -webkit-text-fill-color: initial;
+    margin-bottom: 0.75rem;
     color: var(--color-orange-primary);
 }
 
 .label {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--color-white);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-family: var(--font-primary);
 }
 
 .desc {
     color: var(--color-grey-text);
-    line-height: 1.6;
+    line-height: 1.65;
     font-size: 0.95rem;
 }
 
 @media (max-width: 900px) {
     .section {
         padding: 4rem 0;
-        /* Reduced from global section default if needed */
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .header {
+        margin-bottom: 2.5rem;
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .subtitle {
@@ -100,8 +91,11 @@
         padding: 0 1rem;
     }
 
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
     .number {
         font-size: 3.5rem;
-        /* Reduced from 5rem */
     }
 }
