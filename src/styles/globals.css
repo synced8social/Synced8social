@@ -79,6 +79,6 @@ h6 {
 
 /* Updated Star Pattern - Subtler */
 .star-pattern {
-  background-image: radial-gradient(rgba(232, 69, 5, 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(var(--star-pattern-dot) 1px, transparent 1px);
   background-size: 50px 50px;
 }

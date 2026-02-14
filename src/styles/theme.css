@@ -5,4 +5,13 @@ body[data-theme='upwork'] {
   /* Swap Synced accent to Upwork green */
   --color-orange-primary: var(--color-upwork);
   --color-orange-secondary: var(--color-upwork-dark);
+
+  /* Make the subtle star pattern match Upwork green too */
+  --star-pattern-dot: rgba(34, 197, 94, 0.16);
+}
+
+html[data-theme='default'],
+body[data-theme='default'],
+:root {
+  --star-pattern-dot: rgba(232, 69, 5, 0.15);
 }

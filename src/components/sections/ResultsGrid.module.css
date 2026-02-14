@@ -59,6 +59,15 @@
     color: var(--color-upwork);
 }
 
+/* Use for Upwork headings that should visually match the big green numbers */
+.upworkTitle {
+    font-size: 1.5rem;
+    color: var(--color-upwork);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
+
 .label {
     font-size: 1.35rem;
     color: var(--color-white);

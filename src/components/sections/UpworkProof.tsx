@@ -14,7 +14,7 @@ export default function UpworkProof() {
 
                 <div className={styles.grid}>
                     <div className={styles.card}>
-                        <h3 className={styles.label}>Profile Optimization</h3>
+                        <h3 className={styles.upworkTitle}>Profile Optimization</h3>
                         <p className={styles.desc}>
                             Clear positioning + clean structure so clients understand your value fast.
                         </p>
