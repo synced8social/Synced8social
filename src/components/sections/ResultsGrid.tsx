@@ -35,6 +35,15 @@ export default function ResultsGrid() {
                                     style={{ width: '100%', height: 'auto', display: 'block' }}
                                 />
                             </div>
+                            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                <Image
+                                    src="/proof/upwork-profile-3-blurred.jpg"
+                                    alt="Upwork profile (identity blurred)"
+                                    width={1600}
+                                    height={1197}
+                                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                                />
+                            </div>
                         </div>
                     </div>
 
