@@ -91,10 +91,17 @@ export default function UpworkProof() {
                     <div className={styles.card}>
                         <div className={`${styles.number} ${styles.numberUpwork}`}>30</div>
                         <h3 className={styles.label}>How it works (30 days)</h3>
-                        <p className={styles.desc}>
-                            Week 1: profile + positioning. Week 2: portfolio + case studies. Week 3–4: proposals + bidding routine.
-                            Goal: increase views → invites → orders. No guarantees, just a proven system.
-                        </p>
+                        <div className={styles.desc} style={{ textAlign: 'left' }}>
+                            <ul style={{ marginTop: '0.25rem', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
+                                <li><strong>Week 1:</strong> Profile + positioning</li>
+                                <li><strong>Week 2:</strong> Portfolio + case studies</li>
+                                <li><strong>Week 3–4:</strong> Proposals + bidding routine</li>
+                                <li><strong>Goal:</strong> Views → Invites → Orders</li>
+                            </ul>
+                            <p style={{ marginTop: '0.9rem', color: 'var(--color-grey-text)' }}>
+                                No guarantees — just a proven system based on your niche, rate, and consistency.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
