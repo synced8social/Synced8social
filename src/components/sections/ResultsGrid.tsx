@@ -53,13 +53,23 @@ export default function ResultsGrid() {
                         <p className={styles.desc}>
                             Strong performance signals matter. We help you present your profile like a professional.
                         </p>
-                        <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                        <div
+                            style={{
+                                marginTop: '1rem',
+                                borderRadius: '16px',
+                                overflow: 'hidden',
+                                border: '1px solid rgba(255,255,255,0.08)',
+                                position: 'relative',
+                                width: '100%',
+                                height: '360px'
+                            }}
+                        >
                             <Image
                                 src="/proof/upwork-jss.png"
                                 alt="Upwork job success score"
-                                width={736}
-                                height={1032}
-                                style={{ width: '100%', height: 'auto', display: 'block' }}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                                style={{ objectFit: 'cover', objectPosition: 'center top' }}
                             />
                         </div>
                     </div>
