@@ -32,7 +32,7 @@ export default function Hero() {
                     <h1 className={styles.headline}>
                         Websites that <span className="text-orange">convert</span>.
                         <br />
-                        Upwork profiles that <span className="text-upwork">get invites</span>.
+                        Upwork profiles that <span className="badge-upwork">get invites</span>.
                     </h1>
 
                     <p className={styles.subline}>

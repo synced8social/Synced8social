@@ -67,6 +67,15 @@ h6 {
   color: var(--color-upwork);
 }
 
+.badge-upwork {
+  display: inline-block;
+  padding: 0.12em 0.28em;
+  border-radius: 0.22em;
+  background: var(--color-upwork);
+  color: #ffffff;
+  line-height: 1;
+}
+
 .bg-orange {
   background-color: var(--color-orange-primary);
 }
