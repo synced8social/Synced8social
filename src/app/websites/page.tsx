@@ -17,17 +17,21 @@ export default function WebsitesPage() {
                     <div className={styles.heroGrid}>
                         <div>
                             <p className={styles.heroSubtitle}>
-                                Your site shouldn&apos;t just look good. It should print money.
+                                Any type of website. Built clean. Built to convert.
                             </p>
                             <h1 className={styles.heroTitle}>
-                                Websites that <br />
-                                <span className="text-orange">Mean Business.</span>
+                                Website <br />
+                                <span className="text-orange">Development.</span>
                             </h1>
                             <p className={styles.heroDesc}>
-                                <p style={{ color: 'var(--color-grey-text)' }}>We build high-octane stores that convert. Optimized for AOV and LTV. It&apos;s not just a shop; it&apos;s a machine.</p>
+                                <span style={{ color: 'var(--color-grey-text)' }}>
+                                    Landing pages, business sites, portfolios, eCommerce, and custom web apps — fast, mobile-first, and SEO-ready.
+                                </span>
                             </p>
-                            <MagneticButton href="/contact">
-                                Start Your Build
+                            <MagneticButton href={`https://wa.me/923238756050?text=${encodeURIComponent(
+                                'Hi Synced! I want a free website audit.\n\nMy business: \nWhat I need (type of website): \nTimeline: '
+                            )}`}>
+                                Get a Free Audit
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: Performance Dashboard */}

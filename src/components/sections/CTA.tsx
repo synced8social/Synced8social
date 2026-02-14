@@ -1,6 +1,10 @@
-import Link from 'next/link';
 import { StarIcon } from '../ui/StarSystem';
 import styles from './CTA.module.css';
+
+const WHATSAPP_NUMBER = '923238756050';
+const whatsappAuditLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    'Hi Synced! I want a free audit.\n\n1) I need: Website Development / Upwork Optimization\n2) My niche: \n3) My goal: \n4) Timeline: '
+)}`;
 
 export default function CTA() {
     return (
@@ -11,16 +15,16 @@ export default function CTA() {
                 </div>
 
                 <h2 className={styles.headline}>
-                    Ready to Get <span className="text-orange">Synced?</span>
+                    Want more <span className="text-orange">orders</span>?
                 </h2>
 
                 <p className={styles.subline}>
-                    Stop losing traffic to bad design. Start converting with a system built for growth.
+                    Get a free audit. We’ll tell you what to fix and what to do next — for your website or your Upwork profile.
                 </p>
 
-                <Link href="/contact" className={styles.ctaButton}>
-                    Start Project
-                </Link>
+                <a href={whatsappAuditLink} className={styles.ctaButton}>
+                    Get a Free Audit
+                </a>
             </div>
         </section>
     );

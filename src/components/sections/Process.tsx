@@ -4,23 +4,23 @@ import { FloatingAccents } from '../ui/FloatingAccents';
 const steps = [
     {
         num: '01',
-        title: 'Align',
-        desc: 'We define the core outcome. No fluff. Just the strategy needed to win.'
+        title: 'Audit',
+        desc: 'We review what you have (or start from zero) and define the fastest path to results.'
     },
     {
         num: '02',
-        title: 'Build',
-        desc: 'Development of the core website engine using Next.js for speed and scale.'
+        title: 'Fix',
+        desc: 'We improve the fundamentals: messaging, structure, and the parts that affect conversions.'
     },
     {
         num: '03',
-        title: 'Optimize',
-        desc: 'Fine-tuning performance, SEO, and connecting your social channels.'
+        title: 'Build',
+        desc: 'Website build or Upwork optimization — executed cleanly with best practices.'
     },
     {
         num: '04',
-        title: 'Scale',
-        desc: 'Launch and growth. The system is live and ready to convert.'
+        title: 'Launch',
+        desc: 'We ship, verify everything, and hand over a simple checklist for the next steps.'
     }
 ];
 

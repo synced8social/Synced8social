@@ -19,14 +19,16 @@ export default function UpworkPage() {
                     <div className={styles.heroGrid}>
                         <div>
                             <h1 className={styles.heroTitle}>
-                                Dominate Upwork. <br />
-                                <span className="text-orange">Command Results.</span>
+                                Start winning on <br />
+                                <span className="text-orange">Upwork.</span>
                             </h1>
                             <p className={styles.heroDesc}>
-                                We optimize your Upwork profile into a high-ticket sales funnel. Rank higher, look premium, and convert viewers into clients automatically.
+                                New freelancer? We optimize your Upwork profile so clients understand you fast — then we guide you on proposals and bidding to start getting orders.
                             </p>
-                            <MagneticButton href="/contact">
-                                Optimize My Profile
+                            <MagneticButton href={`https://wa.me/923238756050?text=${encodeURIComponent(
+                                'Hi Synced! I want a free Upwork audit.\n\nMy niche: \nMy current profile link (if any): \nMy goal: '
+                            )}`}>
+                                Get a Free Audit
                             </MagneticButton>
                         </div>
                         {/* Visual Asset: Profile Stats */}

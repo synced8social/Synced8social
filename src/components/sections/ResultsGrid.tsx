@@ -1,35 +1,54 @@
+import Image from 'next/image';
 import styles from './ResultsGrid.module.css';
 
 export default function ResultsGrid() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="proof">
             <div className="container">
                 <div className={styles.header}>
-                    <h2 className={styles.title}>Results that <span className="text-orange">Compound.</span></h2>
-                    <p className={styles.subtitle}>We don't deal in vanity metrics. We deal in growth.</p>
+                    <h2 className={styles.title}>Proof & <span className="text-orange">Results</span></h2>
+                    <p className={styles.subtitle}>Real work. Clear outcomes. (Client details hidden where needed.)</p>
                 </div>
 
                 <div className={styles.grid}>
                     <div className={styles.card}>
-                        <h3 className={styles.label}>Performance Score</h3>
+                        <h3 className={styles.label}>Upwork Profile Optimization</h3>
                         <p className={styles.desc}>
-                            Google PageSpeed metrics that boost SEO and user retention. faster sites rank higher.
+                            We improve positioning, structure, and clarity so clients understand your value fast.
                         </p>
+                        <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                            <Image
+                                src="/proof/upwork-profile-blurred.jpg"
+                                alt="Upwork profile (identity blurred)"
+                                width={1600}
+                                height={1206}
+                                style={{ width: '100%', height: 'auto', display: 'block' }}
+                            />
+                        </div>
                     </div>
 
                     <div className={styles.card}>
-                        <div className={styles.number}>2x</div>
-                        <h3 className={styles.label}>Conversion Rate</h3>
+                        <div className={styles.number}>95%</div>
+                        <h3 className={styles.label}>Job Success Score</h3>
                         <p className={styles.desc}>
-                            Clearer messaging and faster loads lead to more action. Don't lose leads to loading screens.
+                            Strong performance signals matter. We help you present your profile like a professional.
                         </p>
+                        <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                            <Image
+                                src="/proof/upwork-jss.png"
+                                alt="Upwork job success score"
+                                width={736}
+                                height={1032}
+                                style={{ width: '100%', height: 'auto', display: 'block' }}
+                            />
+                        </div>
                     </div>
 
                     <div className={styles.card}>
                         <div className={styles.number}>100%</div>
-                        <h3 className={styles.label}>Ownership</h3>
+                        <h3 className={styles.label}>You Own Everything</h3>
                         <p className={styles.desc}>
-                            You own the code, the assets, and the system. No lock-ins. No monthly rental fees for your own site.
+                            You own the code, assets, and setup. No lock-in. Clean handoff.
                         </p>
                     </div>
                 </div>

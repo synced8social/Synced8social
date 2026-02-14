@@ -1,8 +1,12 @@
-import Link from 'next/link';
 import { StarIcon } from '../ui/StarSystem';
 import { BrandPattern } from '../ui/BrandPattern';
 import MagneticButton from '../ui/MagneticButton';
 import styles from './Hero.module.css';
+
+const WHATSAPP_NUMBER = '923238756050';
+const whatsappAuditLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    'Hi Synced! I want a free audit.\n\n1) I need: Website Development / Upwork Optimization\n2) My niche: \n3) My goal: \n4) Timeline: '
+)}`;
 
 export default function Hero() {
     return (
@@ -26,18 +30,19 @@ export default function Hero() {
             <div className="container">
                 <div className={styles.content}>
                     <h1 className={styles.headline}>
-                        Websites that <br />
-                        <span className="text-orange">Sync</span> Experience <br />
-                        with Growth.
+                        Websites that <span className="text-orange">convert</span>.
+                        <br />
+                        Upwork profiles that <span className="text-orange">win</span>.
                     </h1>
 
                     <p className={styles.subline}>
-                        Synced builds fast, scalable websites and aligns platforms so everything works together to grow a business.
+                        Two offers, one goal: help you get results.
+                        We build any type of website — and we optimize Upwork profiles for new freelancers to start getting orders.
                     </p>
 
                     <div className={styles.ctaGroup}>
-                        <MagneticButton href="/contact">
-                            Start Project
+                        <MagneticButton href={whatsappAuditLink}>
+                            Get a Free Audit
                         </MagneticButton>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ export default function Value() {
             <div className="container">
                 <div className={styles.grid}>
                     <div className={styles.textColumn}>
-                        <h2>Why <span className="text-orange">Sync?</span></h2>
+                        <h2>Why choose <span className="text-orange">Synced?</span></h2>
 
                         <ul className={styles.valueList}>
                             <li className={styles.valueItem}>
@@ -15,28 +15,28 @@ export default function Value() {
                                     <StarIcon size={20} />
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <h3>Viciously Fast</h3>
-                                    <p>Load times under 100ms. Google loves it. Users love it. Conversion rates demand it.</p>
+                                    <h3>Easy to Understand</h3>
+                                    <p>Clear copy, clean layout, and strong CTAs — so visitors know what you offer and what to do next.</p>
                                 </div>
                             </li>
 
                             <li className={styles.valueItem}>
                                 <div className={styles.iconBox}>
-                                    <div style={{ fontWeight: 'bold' }}>S</div>
+                                    <div style={{ fontWeight: 'bold' }}>⚡</div>
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <h3>Systems Thinking</h3>
-                                    <p>We don't just design pages. We design growth loops where your website, social, and platforms feed each other.</p>
+                                    <h3>Fast + SEO Ready</h3>
+                                    <p>We build modern websites that load fast and follow SEO best practices.</p>
                                 </div>
                             </li>
 
                             <li className={styles.valueItem}>
                                 <div className={styles.iconBox}>
-                                    <div style={{ fontWeight: 'bold' }}>∞</div>
+                                    <div style={{ fontWeight: 'bold' }}>🎯</div>
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <h3>Scalable Architecture</h3>
-                                    <p>Built to handle 10 visitors or 10 million. No rebuilding required when you blow up.</p>
+                                    <h3>Upwork Strategy for Beginners</h3>
+                                    <p>We optimize your profile and guide your proposals/bidding so you can start getting orders.</p>
                                 </div>
                             </li>
                         </ul>
