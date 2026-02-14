@@ -28,7 +28,7 @@ export default function ResultsGrid() {
                     </div>
 
                     <div className={styles.card}>
-                        <div className={styles.number}>95%</div>
+                        <div className={styles.number}>100%</div>
                         <h3 className={styles.label}>Job Success Score</h3>
                         <p className={styles.desc}>
                             Strong performance signals matter. We help you present your profile like a professional.
