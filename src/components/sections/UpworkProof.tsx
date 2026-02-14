@@ -98,6 +98,17 @@ export default function UpworkProof() {
                                 <li><strong>Week 3–4:</strong> Proposals + bidding routine</li>
                                 <li><strong>Goal:</strong> Views → Invites → Orders</li>
                             </ul>
+
+                            <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                <Image
+                                    src="/proof/upwork-proposal.jpg"
+                                    alt="Upwork proposal improvements"
+                                    width={1600}
+                                    height={1417}
+                                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                                />
+                            </div>
+
                             <p style={{ marginTop: '0.9rem', color: 'var(--color-grey-text)' }}>
                                 No guarantees — just a proven system based on your niche, rate, and consistency.
                             </p>
