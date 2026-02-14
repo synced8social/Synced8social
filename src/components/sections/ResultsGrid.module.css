@@ -69,10 +69,11 @@
 }
 
 .label {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     color: var(--color-white);
     margin-bottom: 0.75rem;
     font-family: var(--font-primary);
+    font-weight: 800;
 }
 
 .desc {
