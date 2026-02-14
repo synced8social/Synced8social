@@ -99,14 +99,25 @@ export default function UpworkProof() {
                                 <li><strong>Goal:</strong> Views → Invites → Orders</li>
                             </ul>
 
-                            <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
-                                <Image
-                                    src="/proof/upwork-proposal.jpg"
-                                    alt="Upwork proposal improvements"
-                                    width={1600}
-                                    height={1417}
-                                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                                />
+                            <div style={{ marginTop: '1rem', display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
+                                <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                    <Image
+                                        src="/proof/upwork-proposal.jpg"
+                                        alt="Upwork proposal insights"
+                                        width={1600}
+                                        height={1417}
+                                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                                    />
+                                </div>
+                                <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                    <Image
+                                        src="/proof/upwork-coverletter.jpg"
+                                        alt="Upwork cover letter example"
+                                        width={1600}
+                                        height={1132}
+                                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                                    />
+                                </div>
                             </div>
 
                             <p style={{ marginTop: '0.9rem', color: 'var(--color-grey-text)' }}>
