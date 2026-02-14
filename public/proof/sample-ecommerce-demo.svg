@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070708"/>
+      <stop offset="1" stop-color="#121216"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E84505"/>
+      <stop offset="1" stop-color="#ff7a3c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="65%" cy="10%" r="60%">
+      <stop offset="0" stop-color="#E84505" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#E84505" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" rx="48" fill="url(#bg)"/>
+  <rect width="1600" height="1000" rx="48" fill="url(#glow)"/>
+
+  <!-- Header -->
+  <rect x="90" y="90" width="1420" height="86" rx="22" fill="#0e0e12" stroke="#22222a"/>
+  <rect x="130" y="120" width="160" height="26" rx="13" fill="#1b1b24"/>
+  <rect x="320" y="120" width="540" height="26" rx="13" fill="#16161d"/>
+  <rect x="1240" y="116" width="250" height="34" rx="17" fill="url(#accent)"/>
+
+  <!-- Left filters -->
+  <rect x="90" y="200" width="340" height="720" rx="32" fill="#0b0b0f" stroke="#22222a"/>
+  <rect x="140" y="260" width="220" height="18" rx="9" fill="#2b2b33"/>
+  <rect x="140" y="300" width="260" height="14" rx="7" fill="#2b2b33" opacity="0.85"/>
+  <rect x="140" y="340" width="240" height="14" rx="7" fill="#2b2b33" opacity="0.85"/>
+  <rect x="140" y="390" width="140" height="44" rx="16" fill="#14141c" stroke="#2a2a34"/>
+
+  <rect x="140" y="470" width="250" height="14" rx="7" fill="#2b2b33"/>
+  <rect x="140" y="510" width="230" height="14" rx="7" fill="#2b2b33" opacity="0.85"/>
+  <rect x="140" y="550" width="210" height="14" rx="7" fill="#2b2b33" opacity="0.85"/>
+
+  <!-- Product grid -->
+  <rect x="460" y="200" width="1050" height="720" rx="32" fill="#0b0b0f" stroke="#22222a"/>
+
+  <!-- Top row cards -->
+  <g fill="#0e0e14" stroke="#24242b">
+    <rect x="510" y="250" width="320" height="300" rx="28"/>
+    <rect x="860" y="250" width="320" height="300" rx="28"/>
+    <rect x="1210" y="250" width="320" height="300" rx="28"/>
+    <rect x="510" y="580" width="320" height="300" rx="28"/>
+    <rect x="860" y="580" width="320" height="300" rx="28"/>
+    <rect x="1210" y="580" width="320" height="300" rx="28"/>
+  </g>
+
+  <!-- Image placeholders -->
+  <g fill="#2b2b33" opacity="0.95">
+    <rect x="548" y="290" width="244" height="140" rx="18"/>
+    <rect x="898" y="290" width="244" height="140" rx="18"/>
+    <rect x="1248" y="290" width="244" height="140" rx="18"/>
+    <rect x="548" y="620" width="244" height="140" rx="18"/>
+    <rect x="898" y="620" width="244" height="140" rx="18"/>
+    <rect x="1248" y="620" width="244" height="140" rx="18"/>
+  </g>
+
+  <!-- Price / CTA lines -->
+  <g fill="#2b2b33">
+    <rect x="548" y="458" width="120" height="14" rx="7"/>
+    <rect x="548" y="486" width="180" height="14" rx="7" opacity="0.85"/>
+    <rect x="548" y="810" width="120" height="14" rx="7"/>
+    <rect x="548" y="838" width="180" height="14" rx="7" opacity="0.85"/>
+
+    <rect x="898" y="458" width="120" height="14" rx="7"/>
+    <rect x="898" y="486" width="180" height="14" rx="7" opacity="0.85"/>
+    <rect x="898" y="810" width="120" height="14" rx="7"/>
+    <rect x="898" y="838" width="180" height="14" rx="7" opacity="0.85"/>
+
+    <rect x="1248" y="458" width="120" height="14" rx="7"/>
+    <rect x="1248" y="486" width="180" height="14" rx="7" opacity="0.85"/>
+    <rect x="1248" y="810" width="120" height="14" rx="7"/>
+    <rect x="1248" y="838" width="180" height="14" rx="7" opacity="0.85"/>
+  </g>
+
+  <!-- Accent add-to-cart buttons -->
+  <g>
+    <rect x="548" y="514" width="140" height="38" rx="14" fill="url(#accent)"/>
+    <rect x="898" y="514" width="140" height="38" rx="14" fill="url(#accent)"/>
+    <rect x="1248" y="514" width="140" height="38" rx="14" fill="url(#accent)"/>
+  </g>
+
+  <text x="120" y="965" fill="#a7a7b0" font-family="ui-sans-serif, system-ui, -apple-system" font-size="26">Sample build (demo) — eCommerce</text>
+</svg>

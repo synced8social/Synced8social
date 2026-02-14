@@ -8,7 +8,7 @@ export default function WebsiteProof() {
                 <div className={styles.header}>
                     <h2 className={styles.title}><span className="text-orange">Websites</span> Proof</h2>
                     <p className={styles.subtitle}>
-                        Demo thumbnails (concepts). Replace with real client work as you collect projects.
+                        Sample builds (demo). These show what we can design & build. Replace with real client work as you collect projects.
                     </p>
                 </div>
 
@@ -18,10 +18,10 @@ export default function WebsiteProof() {
                         <p className={styles.desc}>Fast, clean pages focused on one action: convert.</p>
                         <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                             <Image
-                                src="/proof/website-demo-landing.svg"
-                                alt="Landing page demo thumbnail"
+                                src="/proof/sample-landing-demo.svg"
+                                alt="Sample landing page demo"
                                 width={1600}
-                                height={900}
+                                height={1000}
                                 style={{ width: '100%', height: 'auto', display: 'block' }}
                             />
                         </div>
@@ -32,10 +32,10 @@ export default function WebsiteProof() {
                         <p className={styles.desc}>Clear offer + trust + CTA. Easy for anyone to understand.</p>
                         <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                             <Image
-                                src="/proof/website-demo-business.svg"
-                                alt="Business website demo thumbnail"
+                                src="/proof/sample-business-demo.svg"
+                                alt="Sample business website demo"
                                 width={1600}
-                                height={900}
+                                height={1000}
                                 style={{ width: '100%', height: 'auto', display: 'block' }}
                             />
                         </div>
@@ -46,10 +46,10 @@ export default function WebsiteProof() {
                         <p className={styles.desc}>Product pages designed for speed and conversions.</p>
                         <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                             <Image
-                                src="/proof/website-demo-ecommerce.svg"
-                                alt="eCommerce website demo thumbnail"
+                                src="/proof/sample-ecommerce-demo.svg"
+                                alt="Sample ecommerce demo"
                                 width={1600}
-                                height={900}
+                                height={1000}
                                 style={{ width: '100%', height: 'auto', display: 'block' }}
                             />
                         </div>
