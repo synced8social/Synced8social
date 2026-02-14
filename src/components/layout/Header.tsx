@@ -45,7 +45,6 @@ export default function Header() {
                 <nav className={styles.centeredNav}>
                     <Link href="/websites" className={styles.navLink}>Websites</Link>
                     <Link href="/upwork" className={styles.navLink}>Upwork</Link>
-                    <Link href="/upwork#proof" className={styles.navLink}>Proof</Link>
                 </nav>
 
                 {/* Right Actions: CTA + Hamburger */}
@@ -78,7 +77,6 @@ export default function Header() {
                 <div className={styles.mobileLinks}>
                     <Link href="/websites" onClick={() => setMobileMenuOpen(false)}>Websites</Link>
                     <Link href="/upwork" onClick={() => setMobileMenuOpen(false)}>Upwork</Link>
-                    <Link href="/upwork#proof" onClick={() => setMobileMenuOpen(false)}>Proof</Link>
                     <a
                         href={`https://wa.me/923238756050?text=${encodeURIComponent(
                             'Hi Synced! I want a free audit.\n\n1) I need: Website Development / Upwork Optimization\n2) My niche: \n3) My goal: \n4) Timeline: '
