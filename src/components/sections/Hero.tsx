@@ -32,12 +32,14 @@ export default function Hero() {
                     <h1 className={styles.headline}>
                         Websites that <span className="text-orange">convert</span>.
                         <br />
-                        Upwork profiles that <span className="text-orange">win</span>.
+                        Upwork profiles that <span className="text-orange">get invites</span>.
                     </h1>
 
                     <p className={styles.subline}>
-                        Two offers, one goal: help you get results.
-                        We build any type of website — and we optimize Upwork profiles for new freelancers to start getting orders.
+                        Synced has only two offers:
+                        <strong> Website Development</strong> (any type of website) and
+                        <strong> Upwork Optimization</strong> (for new freelancers).
+                        We rewrite your profile, upgrade your portfolio, and give you a 30‑day plan to increase views → invites → orders.
                     </p>
 
                     <div className={styles.ctaGroup}>

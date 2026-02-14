@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../styles/globals.css';
+import '../styles/theme.css';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ThemeClient from "@/components/layout/ThemeClient";
 
 // Configure Inter (Body Font)
 const inter = Inter({
@@ -28,6 +30,7 @@ export default function RootLayout({
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet" />
       </head>
       <body className={`${inter.variable} antialiased`}>
+        <ThemeClient />
         <Header />
         <main>{children}</main>
         <Footer />

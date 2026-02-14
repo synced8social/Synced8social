@@ -1,0 +1,8 @@
+/* Theme switching via data-theme (set by ThemeClient) */
+
+html[data-theme='upwork'],
+body[data-theme='upwork'] {
+  /* Swap Synced accent to Upwork green */
+  --color-orange-primary: var(--color-upwork);
+  --color-orange-secondary: var(--color-upwork-dark);
+}
