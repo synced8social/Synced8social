@@ -36,10 +36,10 @@ export default function Hero() {
                     </h1>
 
                     <p className={styles.subline}>
-                        Synced has only two offers:
-                        <strong> Website Development</strong> (any type of website) and
-                        <strong> Upwork Optimization</strong> (for new freelancers).
-                        We rewrite your profile, upgrade your portfolio, and give you a 30‑day plan to increase views → invites → orders.
+                        Two offers only.
+                        <strong> Websites</strong> for businesses + brands, and
+                        <strong> Upwork optimization</strong> for new freelancers.
+                        Clear profile + portfolio + a 30‑day plan to increase views → invites → orders.
                     </p>
 
                     <div className={styles.ctaGroup}>
