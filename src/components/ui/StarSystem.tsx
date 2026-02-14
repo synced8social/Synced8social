@@ -24,7 +24,7 @@ export const StarIcon = ({
 
     // Glass/Glow Effects using strict two-tone orange
     if (variant === 'glow') {
-        baseStyle.filter = 'drop-shadow(0 0 8px rgba(232, 69, 5, 0.6))';
+        baseStyle.filter = 'drop-shadow(0 0 8px rgba(var(--accent-rgb), 0.60))';
     } else if (variant === 'glass') {
         baseStyle.opacity = opacity * 0.8;
         baseStyle.filter = 'blur(1px)';
@@ -62,7 +62,7 @@ export const StarPattern = () => (
             opacity: 0.1, // Very subtle
             pointerEvents: 'none',
             zIndex: 0,
-            backgroundImage: 'radial-gradient(rgba(232, 69, 5, 0.2) 1px, transparent 1px)', // Using orange tint for pattern
+            backgroundImage: 'radial-gradient(rgba(var(--accent-rgb), 0.20) 1px, transparent 1px)', // Accent tint for pattern
             backgroundSize: '50px 50px'
         }}
     />

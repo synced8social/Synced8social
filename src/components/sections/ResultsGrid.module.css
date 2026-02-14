@@ -44,7 +44,7 @@
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(232, 69, 5, 0.28);
+    border-color: rgba(var(--accent-rgb), 0.28);
 }
 
 .number {

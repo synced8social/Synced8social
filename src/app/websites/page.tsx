@@ -39,7 +39,7 @@ export default function WebsitesPage() {
                             <div style={{
                                 position: 'absolute',
                                 inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
+                                background: 'radial-gradient(circle, rgba(var(--accent-rgb), 0.20) 0%, transparent 70%)',
                                 filter: 'blur(50px)',
                                 zIndex: 0
                             }} />

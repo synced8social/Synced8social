@@ -37,7 +37,7 @@ export default function UpworkPage() {
                             <div style={{
                                 position: 'absolute',
                                 inset: 0,
-                                background: 'radial-gradient(circle, rgba(232, 69, 5, 0.2) 0%, transparent 70%)',
+                                background: 'radial-gradient(circle, rgba(var(--accent-rgb), 0.20) 0%, transparent 70%)',
                                 filter: 'blur(40px)',
                                 zIndex: 0
                             }} />

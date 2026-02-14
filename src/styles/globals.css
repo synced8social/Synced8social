@@ -3,6 +3,9 @@
   --color-orange-primary: #E84505;
   --color-orange-secondary: #D43B05;
 
+  /* Accent RGB (used for glows/shadows/gradients via rgba(var(--accent-rgb), a)) */
+  --accent-rgb: 232 69 5;
+
   /* Upwork Accent (green) */
   --color-upwork: #22c55e;
   --color-upwork-dark: #16a34a;

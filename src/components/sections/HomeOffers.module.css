@@ -22,7 +22,7 @@
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(232, 69, 5, 0.28);
+  border-color: rgba(var(--accent-rgb), 0.28);
 }
 
 .cardUpwork:hover {
