@@ -2,7 +2,7 @@ import Image from 'next/image';
 import CTA from '@/components/sections/CTA';
 // StarIcon import removed
 import { BrandPattern } from '@/components/ui/BrandPattern';
-import ResultsGrid from '@/components/sections/ResultsGrid';
+import WebsiteProof from '@/components/sections/WebsiteProof';
 import MagneticButton from '@/components/ui/MagneticButton';
 import { FloatingAccents } from '@/components/ui/FloatingAccents';
 import styles from '@/styles/ServicePage.module.css';
@@ -93,7 +93,7 @@ export default function WebsitesPage() {
                 </div>
             </section>
 
-            <ResultsGrid />
+            <WebsiteProof />
 
             <CTA />
         </main>
