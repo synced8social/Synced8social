@@ -16,14 +16,25 @@ export default function ResultsGrid() {
                         <p className={styles.desc}>
                             We improve positioning, structure, and clarity so clients understand your value fast.
                         </p>
-                        <div style={{ marginTop: '1rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
-                            <Image
-                                src="/proof/upwork-profile-blurred.jpg"
-                                alt="Upwork profile (identity blurred)"
-                                width={1600}
-                                height={1206}
-                                style={{ width: '100%', height: 'auto', display: 'block' }}
-                            />
+                        <div style={{ marginTop: '1rem', display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
+                            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                <Image
+                                    src="/proof/upwork-profile-blurred.jpg"
+                                    alt="Upwork profile (identity blurred)"
+                                    width={1600}
+                                    height={1206}
+                                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                                />
+                            </div>
+                            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                                <Image
+                                    src="/proof/upwork-profile-2-blurred.jpg"
+                                    alt="Upwork profile (identity blurred)"
+                                    width={1600}
+                                    height={1192}
+                                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                                />
+                            </div>
                         </div>
                     </div>
 
