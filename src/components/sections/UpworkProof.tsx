@@ -51,7 +51,7 @@ export default function UpworkProof() {
 
                     <div className={styles.card}>
                         <div className={`${styles.number} ${styles.numberUpwork}`}>100%</div>
-                        <h3 className={styles.label}>Stats & Visibility</h3>
+                        <h3 className={styles.upworkTitle}>Stats & Visibility</h3>
                         <p className={styles.desc}>
                             We optimize your profile so it looks premium and gets more visibility (views), more invites, and better conversions.
                             Results vary by niche, rate, and consistency — no fake guarantees.
@@ -90,7 +90,7 @@ export default function UpworkProof() {
 
                     <div className={styles.card}>
                         <div className={`${styles.number} ${styles.numberUpwork}`}>30</div>
-                        <h3 className={styles.label}>How it works (30 days)</h3>
+                        <h3 className={styles.upworkTitle}>How it works (30 days)</h3>
                         <div className={styles.desc} style={{ textAlign: 'left' }}>
                             <ul style={{ marginTop: '0.25rem', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
                                 <li><strong>Week 1:</strong> Profile + positioning</li>
