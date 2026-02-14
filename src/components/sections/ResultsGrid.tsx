@@ -51,9 +51,10 @@ export default function ResultsGrid() {
 
                     <div className={styles.card}>
                         <div className={styles.number}>100%</div>
-                        <h3 className={styles.label}>Performance Signals</h3>
+                        <h3 className={styles.label}>Stats & Visibility</h3>
                         <p className={styles.desc}>
-                            We optimize what clients see first: clarity, trust, and professional presentation.
+                            We optimize your profile so it looks premium and gets more visibility (views), more invites, and better conversions.
+                            Results vary by niche, rate, and consistency — no fake guarantees.
                         </p>
                         <div
                             style={{
@@ -63,7 +64,8 @@ export default function ResultsGrid() {
                                 border: '1px solid rgba(255,255,255,0.08)',
                                 position: 'relative',
                                 width: '100%',
-                                height: '360px'
+                                height: '420px',
+                                background: 'rgba(0,0,0,0.25)'
                             }}
                         >
                             <Image
@@ -71,26 +73,27 @@ export default function ResultsGrid() {
                                 alt="Upwork stats"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                                style={{ objectFit: 'contain', objectPosition: 'center' }}
                             />
                         </div>
 
-                        <div style={{ marginTop: '1rem', color: 'var(--color-grey-text)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                            <strong style={{ color: 'var(--color-white)' }}>What you get:</strong>
-                            <ul style={{ marginTop: '0.5rem', paddingLeft: '1.2rem' }}>
-                                <li>Profile rewrite (title, overview, specialized profiles)</li>
-                                <li>Portfolio structure + case study format</li>
-                                <li>Proposal & bidding guidance (beginner-friendly)</li>
-                                <li>30-day action plan to increase visibility and invites</li>
+                        <div style={{ marginTop: '1.25rem', color: 'var(--color-grey-text)', fontSize: '0.95rem', lineHeight: 1.55 }}>
+                            <strong style={{ color: 'var(--color-white)' }}>What you get (Upwork Optimization):</strong>
+                            <ul style={{ marginTop: '0.6rem', paddingLeft: '1.2rem' }}>
+                                <li><strong style={{ color: 'var(--color-white)' }}>Profile rewrite</strong>: title, overview, and specialized profiles</li>
+                                <li><strong style={{ color: 'var(--color-white)' }}>Portfolio upgrade</strong>: we add/organize projects and convert them into clean case studies</li>
+                                <li><strong style={{ color: 'var(--color-white)' }}>Proposal guidance</strong>: simple templates + what to write and when to send</li>
+                                <li><strong style={{ color: 'var(--color-white)' }}>30‑day invite plan</strong>: daily actions to improve views, invites, and order flow</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className={styles.card}>
                         <div className={styles.number}>30</div>
-                        <h3 className={styles.label}>30-Day Invite Plan</h3>
+                        <h3 className={styles.label}>How it works (30 days)</h3>
                         <p className={styles.desc}>
-                            No fake guarantees. We aim for more invites and better conversions — based on your niche and consistency.
+                            Week 1: profile + positioning. Week 2: portfolio + case studies. Week 3–4: proposals + bidding routine.
+                            Goal: increase views → invites → orders. No guarantees, just a proven system.
                         </p>
                     </div>
                 </div>
