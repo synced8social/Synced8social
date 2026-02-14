@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0c"/>
+      <stop offset="1" stop-color="#141418"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5a1f"/>
+      <stop offset="1" stop-color="#ff8a4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <rect x="90" y="90" width="1420" height="96" rx="24" fill="#14141a" stroke="#24242b"/>
+  <rect x="130" y="124" width="180" height="26" rx="13" fill="#22222a"/>
+  <rect x="350" y="124" width="520" height="26" rx="13" fill="#1d1d25"/>
+  <rect x="1250" y="120" width="230" height="34" rx="17" fill="url(#accent)" opacity="0.9"/>
+
+  <!-- Content blocks -->
+  <rect x="90" y="220" width="650" height="500" rx="28" fill="#14141a" stroke="#24242b"/>
+  <rect x="140" y="280" width="420" height="54" rx="18" fill="#f5f5f7" opacity="0.07"/>
+  <rect x="140" y="360" width="520" height="20" rx="10" fill="#2b2b33"/>
+  <rect x="140" y="400" width="480" height="20" rx="10" fill="#2b2b33"/>
+  <rect x="140" y="440" width="500" height="20" rx="10" fill="#2b2b33"/>
+  <rect x="140" y="520" width="220" height="52" rx="18" fill="url(#accent)"/>
+
+  <rect x="780" y="220" width="730" height="240" rx="28" fill="#14141a" stroke="#24242b"/>
+  <rect x="830" y="270" width="330" height="22" rx="11" fill="#2b2b33"/>
+  <rect x="830" y="314" width="610" height="18" rx="9" fill="#2b2b33"/>
+  <rect x="830" y="354" width="560" height="18" rx="9" fill="#2b2b33"/>
+
+  <rect x="780" y="480" width="350" height="240" rx="28" fill="#14141a" stroke="#24242b"/>
+  <rect x="1160" y="480" width="350" height="240" rx="28" fill="#14141a" stroke="#24242b"/>
+  <rect x="830" y="530" width="240" height="18" rx="9" fill="#2b2b33"/>
+  <rect x="1210" y="530" width="240" height="18" rx="9" fill="#2b2b33"/>
+
+  <text x="90" y="840" fill="#a7a7b0" font-family="ui-sans-serif, system-ui, -apple-system" font-size="28">Demo thumbnail — Business Website (concept)</text>
+</svg>

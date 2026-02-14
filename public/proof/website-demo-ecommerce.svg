@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0c"/>
+      <stop offset="1" stop-color="#111116"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5a1f"/>
+      <stop offset="1" stop-color="#ff8a4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <rect x="90" y="90" width="1420" height="86" rx="22" fill="#14141a" stroke="#24242b"/>
+  <rect x="130" y="122" width="160" height="26" rx="13" fill="#22222a"/>
+  <rect x="330" y="122" width="560" height="26" rx="13" fill="#1d1d25"/>
+  <rect x="1240" y="118" width="250" height="34" rx="17" fill="url(#accent)" opacity="0.85"/>
+
+  <!-- Product grid -->
+  <rect x="90" y="210" width="330" height="510" rx="28" fill="#14141a" stroke="#24242b"/>
+  <rect x="140" y="260" width="230" height="18" rx="9" fill="#2b2b33"/>
+  <rect x="140" y="304" width="260" height="14" rx="7" fill="#2b2b33" opacity="0.9"/>
+  <rect x="140" y="350" width="120" height="38" rx="14" fill="url(#accent)"/>
+
+  <!-- cards -->
+  <g fill="#14141a" stroke="#24242b">
+    <rect x="450" y="210" width="340" height="245" rx="28"/>
+    <rect x="810" y="210" width="340" height="245" rx="28"/>
+    <rect x="1170" y="210" width="340" height="245" rx="28"/>
+    <rect x="450" y="475" width="340" height="245" rx="28"/>
+    <rect x="810" y="475" width="340" height="245" rx="28"/>
+    <rect x="1170" y="475" width="340" height="245" rx="28"/>
+  </g>
+
+  <!-- placeholders inside cards -->
+  <g fill="#2b2b33">
+    <rect x="490" y="250" width="260" height="120" rx="18" opacity="0.9"/>
+    <rect x="850" y="250" width="260" height="120" rx="18" opacity="0.9"/>
+    <rect x="1210" y="250" width="260" height="120" rx="18" opacity="0.9"/>
+    <rect x="490" y="515" width="260" height="120" rx="18" opacity="0.9"/>
+    <rect x="850" y="515" width="260" height="120" rx="18" opacity="0.9"/>
+    <rect x="1210" y="515" width="260" height="120" rx="18" opacity="0.9"/>
+  </g>
+
+  <text x="90" y="840" fill="#a7a7b0" font-family="ui-sans-serif, system-ui, -apple-system" font-size="28">Demo thumbnail — eCommerce Website (concept)</text>
+</svg>
