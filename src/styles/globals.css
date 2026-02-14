@@ -1,7 +1,10 @@
 :root {
-  /* Brand Colors - STRICT Two-Tone Orange */
+  /* Brand Colors */
   --color-orange-primary: #E84505;
   --color-orange-secondary: #D43B05;
+
+  /* Upwork Accent (green) */
+  --color-upwork: #22c55e;
 
   /* Neutrals */
   --color-charcoal: #0a0a0a;
@@ -57,6 +60,10 @@ h6 {
 /* Utility Classes */
 .text-orange {
   color: var(--color-orange-primary);
+}
+
+.text-upwork {
+  color: var(--color-upwork);
 }
 
 .bg-orange {

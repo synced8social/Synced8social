@@ -53,41 +53,37 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Layer 3: Navigation & Services */}
+                {/* Layer 3: Simple Navigation */}
                 <div className={styles.navGrid}>
-
-                    {/* Column 1: Explore */}
                     <div className={styles.column}>
                         <h4 className={styles.columnTitle}>Explore</h4>
                         <ul className={styles.linkList}>
-                            <li><Link href="/websites">Websites</Link></li>
-                            <li><Link href="/upwork">Upwork</Link></li>
-                            <li><Link href="/social">Social & Support</Link></li>
-                            <li><Link href="/process">Process</Link></li>
-                            <li><Link href="/results">Results</Link></li>
-                            <li><Link href="/about">About</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Column 2: Services (Detailed) */}
-                    <div className={styles.column}>
-                        <h4 className={styles.columnTitle}>Services</h4>
-                        <ul className={styles.linkList}>
-                            <li><Link href="/websites">High-Performance Websites</Link></li>
-                            <li><Link href="/ecommerce">E-commerce Solutions</Link></li>
-                            <li><Link href="/real-estate">Real Estate Platforms</Link></li>
+                            <li><Link href="/websites">Website Development</Link></li>
                             <li><Link href="/upwork">Upwork Optimization</Link></li>
-                            <li><Link href="/social">Social & Customer Support</Link></li>
                         </ul>
                     </div>
 
-                    {/* Column 3: Connect */}
                     <div className={styles.column}>
-                        <h4 className={styles.columnTitle}>Connect</h4>
+                        <h4 className={styles.columnTitle}>Get a Free Audit</h4>
                         <ul className={styles.linkList}>
+                            <li>
+                                <a
+                                    href={`https://wa.me/923238756050?text=${encodeURIComponent(
+                                        'Hi Synced! I want a free audit.\n\n1) I need: Website Development / Upwork Optimization\n2) My niche: \n3) My goal: \n4) Timeline: '
+                                    )}`}
+                                >
+                                    WhatsApp Us
+                                </a>
+                            </li>
                             <li><a href="mailto:hello@synced.com">hello@synced.com</a></li>
-                            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.column}>
+                        <h4 className={styles.columnTitle}>Legal</h4>
+                        <ul className={styles.linkList}>
+                            <li><Link href="/privacy">Privacy Policy</Link></li>
+                            <li><Link href="/terms">Terms of Use</Link></li>
                         </ul>
                     </div>
                 </div>

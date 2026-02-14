@@ -6,7 +6,7 @@ export default function ResultsGrid() {
         <section className={styles.section} id="proof">
             <div className="container">
                 <div className={styles.header}>
-                    <h2 className={styles.title}><span className="text-orange">Upwork</span> Proof</h2>
+                    <h2 className={styles.title}><span className="text-upwork">Upwork</span> Proof</h2>
                     <p className={styles.subtitle}>
                         Proof from profile optimizations (client details hidden). Results vary by niche, pricing, and activity.
                     </p>
@@ -50,7 +50,7 @@ export default function ResultsGrid() {
                     </div>
 
                     <div className={styles.card}>
-                        <div className={styles.number}>100%</div>
+                        <div className={`${styles.number} ${styles.numberUpwork}`}>100%</div>
                         <h3 className={styles.label}>Stats & Visibility</h3>
                         <p className={styles.desc}>
                             We optimize your profile so it looks premium and gets more visibility (views), more invites, and better conversions.
@@ -89,7 +89,7 @@ export default function ResultsGrid() {
                     </div>
 
                     <div className={styles.card}>
-                        <div className={styles.number}>30</div>
+                        <div className={`${styles.number} ${styles.numberUpwork}`}>30</div>
                         <h3 className={styles.label}>How it works (30 days)</h3>
                         <p className={styles.desc}>
                             Week 1: profile + positioning. Week 2: portfolio + case studies. Week 3–4: proposals + bidding routine.
@@ -99,7 +99,7 @@ export default function ResultsGrid() {
                 </div>
 
                 <div className={styles.header} style={{ marginTop: '5rem' }}>
-                    <h2 className={styles.title}><span className="text-orange">Website</span> Proof</h2>
+                    <h2 className={styles.title}><span className="text-orange">Websites</span> Proof</h2>
                     <p className={styles.subtitle}>
                         Demo thumbnails (concepts). Replace with real client work as you collect projects.
                     </p>

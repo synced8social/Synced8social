@@ -55,6 +55,10 @@
     color: var(--color-orange-primary);
 }
 
+.numberUpwork {
+    color: var(--color-upwork);
+}
+
 .label {
     font-size: 1.35rem;
     color: var(--color-white);
